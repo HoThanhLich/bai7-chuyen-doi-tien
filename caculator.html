@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>caculator</title>
+</head>
+<body>
+<form>
+    <h1>Caculator</h1>
+    <input type="number" placeholder="12" id="soThuNhat">
+    <input type="number" placeholder="12" id="soThuHai"> <br>
+    <br>
+    <input type="button" value="Addition(+)" id="phepCong" onclick="addition()">
+    <input type="button" value="Subtraction(-)" id="phepTru" onclick="subtraction()">
+    <input type="button" value="Multiplication(X)" id="phepNhan" onclick="multiplication()">
+    <input type="button" value="Division(/)" id="phepChia" onclick="division()">
+</form>
+<p id="traKetQua"></p>
+<script>
+
+    function addition() {
+        let soA = document.getElementById("soThuNhat").value;
+        soA = parseFloat(soA)
+        let soB = document.getElementById("soThuHai").value;
+        soB = parseFloat(soB);
+        let ketQua;
+        ketQua = soA + soB;
+        document.getElementById("traKetQua").innerHTML = "Kết Quả Bằng: " + ketQua;
+
+    }
+    function subtraction() {
+        let soA = document.getElementById("soThuNhat").value;
+        soA = parseFloat(soA)
+        let soB = document.getElementById("soThuHai").value;
+        soB = parseFloat(soB);
+        let ketQua;
+        ketQua = soA - soB;
+        document.getElementById("traKetQua").innerHTML = "Kết Quả Bằng: " + ketQua;
+
+    }
+    function multiplication() {
+        let soA = document.getElementById("soThuNhat").value;
+        soA = parseFloat(soA)
+        let soB = document.getElementById("soThuHai").value;
+        soB = parseFloat(soB);
+        let ketQua;
+        ketQua = soA * soB;
+        document.getElementById("traKetQua").innerHTML = "Kết Quả Bằng: " + ketQua;
+
+    }
+    function division() {
+        let soA = document.getElementById("soThuNhat").value;
+        soA = parseFloat(soA)
+        let soB = document.getElementById("soThuHai").value;
+        soB = parseFloat(soB);
+        let ketQua;
+        ketQua = soA / soB;
+        document.getElementById("traKetQua").innerHTML = "Kết Quả Bằng: " + ketQua;
+
+    }
+
+</script>
+</body>
+</html>
